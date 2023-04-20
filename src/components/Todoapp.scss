@@ -1,0 +1,80 @@
+body {
+  background-color: #393853;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+.todo {
+  width: 100%;
+  height: 20vh;
+  background-color: #393853;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: center;
+
+  &__title {
+    font-size: 20px;
+  }
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  &__input {
+    border: none;
+    padding: 0px 40px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #292530;
+    font-size: 16px;
+    color: #f6f6f6;
+    outline: none;
+    font-family: "Montserrat";
+
+    &:focus {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      background-color: #25212c;
+      border: none;
+    }
+  }
+
+  &__button {
+    background-color: #292530;
+    color: #8eb9e4;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    &__icon {
+      font-size: 32px;
+    }
+  }
+}
+
+hr {
+  width: 95%;
+  margin-top: 60px;
+  border: 0.1px solid #292530;
+}
+
+.todo-title {
+  margin-left: 35px;
+  padding-top: 20px;
+  color: #f6f6f6;
+  font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 440px;
+  }
+}
